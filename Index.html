@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PulseFinance - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+    <body>
+
+        <div class="contenedor-principal">
+    <select id="selector-moneda">
+        <option value="bitcoin">Bitcoin (BTC)</option>
+        <option value="ethereum">Ethereum (ETH)</option>
+        <option value="solana">Solana (SOL)</option>
+        <option value="dogecoin">Dogecoin (DOGE)</option>
+    </select>   
+   <h2 id="precio-btc">Cargando precio...</h2>
+    <p id="cambio-24h">Calculando 24h...</p> 
+    <button id="btn-actualizar">Actualizar Precio</button>
+    
+    <div class="contenedor-grafica">
+        <canvas id="miGrafica"></canvas>
+    </div>
+</div>
+        <script src="app.js"></script>
+    </body>
+</html>

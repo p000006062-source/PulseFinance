@@ -1,0 +1,94 @@
+/* Reseteamos márgenes y ponemos una fuente moderna*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'segoe ui', tahoma, geneva, verdana, sans-serif;
+}
+
+/* El fonde oscuro de la pagina completa */
+body {
+    background-color: #121212; /* Un gris casi negro, muy elegante */
+    color: #ffffff;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    min-height: 100vh; /* Ocupa la altura de la pantalla */
+}
+
+/* La tarjeta que contendrá nuestro dashboard */
+
+.contenedor-principal{
+    background-color: #1e1e1e;
+    padding: 40px;
+    border-radius: 15px; /* Border rendondos ¿*/
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5); /* Sombras de profundidad */
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+
+}
+h1{
+    color: #888888; /* Textos secundarios gris*/
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+#precio-btc {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #00ff7f; /* Verde neón financiero*/
+    margin-bottom: 30px;
+}
+/* Estilizamos el botón para que no parezca de los años 90 */
+
+button {
+    background-color: #2962ff; /* Azul vibrante */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #1c44b2; /* Azul más oscuro al pasar el mouse */
+}
+/* Este es el contenedor donde vivirá la gráfica*/
+.cotenedor-grafica {
+    margin-top: 30px;
+    width: 100%;
+}
+/* Estilo general para el porcentaje*/
+#cambio-24h {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+/* Clases que javaScrript va usar como interruptores*/
+.positivo {
+    color: #00ff7f; /* Verde neón para las ganancias */
+}
+.negativo {
+    color: #ff3b3b; /*Rojo neón para pérdidas*/
+}
+/* Estilos para nuestro nuevo menú desplegable */
+#selector-moneda {
+    background-color: #1e1e1e;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid #00ff7f;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    outline: none;
+    text-align: center;
+}
+
+/* Cambia un poco el color cuando pasamos el mouse por encima */
+#selector-moneda:hover {
+    background-color: #2a2a2a;
+}
+
